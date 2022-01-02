@@ -1,0 +1,45 @@
+sudo yum update -y
+sudo yum install java-1.8.0
+sudo yum remove java-1.7.0-openjdk
+sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+sudo rpm — import https://pkg.jenkins.io/redhat/jenkins.io.key
+sudo yum install jenkins -y
+
+*********
+ # yum install epel-release -y  
+ # yum install daemonize -y  
+#sudo amazon-linux-extras install epel -y
+#sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
+#sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+#sudo amazon-linux-extras install epel -y
+# sudo yum update -y
+#sudo yum install jenkins
+#sudo service jenkins start
+got browser and give ip:8080
+#sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+
+
+yum update -y
+
+yum install httpd -y
+cd /var/www/html
+echo "sekhar" >index.html
+service httpd start
+chkconfig httpd on ( this command will healp you to start hhtpd service automatically,whenever mavhine 
+is 
+resarted)
+
+
+
+
+#!/bin/bash
+sudo su 
+yum update -y
+yum install httpd -y
+cd /var/www/html
+echo "bharath" >index.html
+service httpd start
+chkconfig httpd on
+this all are importenst files
+
